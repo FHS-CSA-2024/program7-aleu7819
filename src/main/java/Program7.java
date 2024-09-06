@@ -1,30 +1,42 @@
-package src.main.java;
 //import stuff here
 
 //Your code here
+import java.util.Scanner;
 
-public class Program7{
-	//Define your final variables here
-	// **HINT: Maybe the conversion rates?????**
+public class Program5 {
+    public static void main (String[] args) {
+        
+         Scanner numScanner = new Scanner(System.in);
+         
+         System.out.println("how many shrutebucks?");
+         double Shrutebucks = numScanner.nextInt();
+         
+          System.out.println("how many klevens?");
+        double Klevens = numScanner.nextInt();
+                
+         System.out.println("how many stanley nickels?");
+         double StanNickels = numScanner.nextInt();
+         
+         double newStanNickel = Klevens/20.0 + StanNickels/240.0 +Shrutebucks;
+         
+        
+         System.out.println("new monetary system: " + newStanNickel);
+
+ 
+        
+}}
 
 
-	public static void main(String[] args){
-		//Make you own test code here
-		Program7 tester = new Program7();
-		
-		double myTestVal = 0.0;
-		
-		myTestVal = tester.convertMoney(0,0,0);
-		
-		System.out.println(myTestVal);
-	}
-	
-	
-	
-	public double convertMoney(int schruteBucks, int stanleyNickels, int klevins){
-		//implement a function that converts from the old format to the new format
-		
-	}
-	
-	
-}
+
+//Paste console output below:
+/*
+
+how many shrutebucks?
+7
+how many klevens?
+17
+how many stanley nickels?
+9
+new monetary system: 7.8875
+
+*/
